@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/shopify2020-frontend/static/css/main.6802682f.chunk.css",
+    "main.js": "/shopify2020-frontend/static/js/main.7f17bb82.chunk.js",
+    "main.js.map": "/shopify2020-frontend/static/js/main.7f17bb82.chunk.js.map",
+    "runtime-main.js": "/shopify2020-frontend/static/js/runtime-main.74fd2851.js",
+    "runtime-main.js.map": "/shopify2020-frontend/static/js/runtime-main.74fd2851.js.map",
+    "static/css/2.20aa2d7b.chunk.css": "/shopify2020-frontend/static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.c9a5777e.chunk.js": "/shopify2020-frontend/static/js/2.c9a5777e.chunk.js",
+    "static/js/2.c9a5777e.chunk.js.map": "/shopify2020-frontend/static/js/2.c9a5777e.chunk.js.map",
+    "static/js/3.e5dc86e5.chunk.js": "/shopify2020-frontend/static/js/3.e5dc86e5.chunk.js",
+    "static/js/3.e5dc86e5.chunk.js.map": "/shopify2020-frontend/static/js/3.e5dc86e5.chunk.js.map",
+    "index.html": "/shopify2020-frontend/index.html",
+    "static/css/2.20aa2d7b.chunk.css.map": "/shopify2020-frontend/static/css/2.20aa2d7b.chunk.css.map",
+    "static/css/main.6802682f.chunk.css.map": "/shopify2020-frontend/static/css/main.6802682f.chunk.css.map",
+    "static/js/2.c9a5777e.chunk.js.LICENSE.txt": "/shopify2020-frontend/static/js/2.c9a5777e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.74fd2851.js",
+    "static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.c9a5777e.chunk.js",
+    "static/css/main.6802682f.chunk.css",
+    "static/js/main.7f17bb82.chunk.js"
+  ]
+}
