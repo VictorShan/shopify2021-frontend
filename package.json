@@ -1,5 +1,6 @@
 {
   "name": "shopify2020frontend",
+  "homepage": "shopify2020-frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
