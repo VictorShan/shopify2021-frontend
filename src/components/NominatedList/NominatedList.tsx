@@ -1,5 +1,6 @@
 import { MovieData } from '../types'
 import NominatedItem from './NominatedItem/NominatedItem'
+import styles from './NominatedList.module.css'
 
 type NominatedListProps = {
     list: MovieData[],
@@ -7,7 +8,7 @@ type NominatedListProps = {
 }
 export default function NominatedList({ list, onRemove }: NominatedListProps) {
     return (
-        <ul>
+        <ul className={styles.list}>
             {list.map(e => (
                 <li key={e.imdbID}>
                     <NominatedItem movie={e} onRemove={onRemove}/>

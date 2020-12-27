@@ -1,0 +1,14 @@
+.card {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.icon {
+    height: 32px;
+    margin-right: 5px;
+}
+
+.title {
+    min-width: 100px;
+}
