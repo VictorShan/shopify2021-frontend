@@ -11,17 +11,19 @@ function App() {
   let [searchTerm, setSearchTerm] = useState("")
   let [nominated, setNominated] = useState<MovieData[]>([])
   return (
+    <>
+    {
+      nominated.length >= 5 ?
+        <div className={styles.alert}>
+          <Alert variant={'success'}>
+            You have 5 nominations!
+          </Alert>
+        </div>
+          : <></>
+    }
     <div className={styles.app}>
-      {
-        nominated.length >= 5 ?
-          <div className={styles.alert}>
-            <Alert variant={'success'}>
-              You have 5 nominations!
-            </Alert>
-          </div>
-           : <></>
-      }
-      <div>
+      
+      <div className={styles.title}>
         <h1>The Shoppies</h1>
         <SearchBar onChange={setSearchTerm}/>
       </div>
@@ -37,6 +39,7 @@ function App() {
           onRemove={movie => setNominated(old => old.filter(e => e.imdbID !== movie.imdbID))}/>
       </div>
     </div>
+    </>
   );
 }
 
