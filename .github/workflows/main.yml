@@ -17,11 +17,13 @@ jobs:
       - name: NPM Build 🔧
         run: npm run build
         env:
-          CI: "main"
+          REACT_APP_API_SEARCH: ${{ secrets.REACT_APP_API_SEARCH }}
+          # CI: ""
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
         env:
             ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
