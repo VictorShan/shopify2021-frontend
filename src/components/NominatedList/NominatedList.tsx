@@ -9,12 +9,16 @@ type NominatedListProps = {
 }
 export default function NominatedList({ list, onRemove, className }: NominatedListProps) {
     return (
-        <ul className={`${styles.list} ${className}`}>
-            {list.map(e => (
-                <li key={e.imdbID}>
-                    <NominatedItem movie={e} onRemove={onRemove}/>
-                </li>
-            ))}
-        </ul>
+        <div className={`${className} ${styles.container}`}>
+            <h5>Nominated:</h5>
+            <ul className={styles.list}>
+                {list.map(e => (
+                    <li key={e.imdbID}>
+                        <NominatedItem movie={e} onRemove={onRemove}/>
+                    </li>
+                ))}
+            </ul>
+        </div>
+        
     )
 }

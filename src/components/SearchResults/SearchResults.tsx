@@ -21,7 +21,7 @@ export default function SearchResults({ searchTerm, nominated, onNominate, class
 
     return (
         <div className={`${styles.resultsContainer} ${className}`}>
-            {console.log(results)}
+            <h5>Search Results:</h5>
             <ul className={styles.list}>
                 {results && results.map(e => {
                     let searchRes

@@ -1,5 +1,6 @@
 .app {
-    margin: 5vh 5vw
+    margin: 5vh 5vw;
+    position: relative;
 }
 
 .container {
@@ -15,4 +16,13 @@
 .right {
     flex-grow: 1;
     min-width: 200px;
+}
+
+.alert {
+    
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+
+    z-index: 2;
 }
