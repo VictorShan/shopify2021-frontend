@@ -16,11 +16,15 @@ function App() {
         <SearchBar onChange={setSearchTerm}/>
       </div>
       <div className={styles.container}>
-        <SearchResults 
+        <SearchResults
+          className={styles.left}
           searchTerm={searchTerm}
           nominated={nominated}
           onNominate={newMovie => setNominated(old => [...old, newMovie])}/>
-        <NominatedList list={nominated} onRemove={movie => setNominated(old => old.filter(e => e.imdbID !== movie.imdbID))}/>
+        <NominatedList
+          className={styles.right}
+          list={nominated} 
+          onRemove={movie => setNominated(old => old.filter(e => e.imdbID !== movie.imdbID))}/>
       </div>
     </div>
   );

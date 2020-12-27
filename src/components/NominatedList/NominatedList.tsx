@@ -4,11 +4,12 @@ import styles from './NominatedList.module.css'
 
 type NominatedListProps = {
     list: MovieData[],
-    onRemove: (movie: MovieData) => void
+    onRemove: (movie: MovieData) => void,
+    className?: string
 }
-export default function NominatedList({ list, onRemove }: NominatedListProps) {
+export default function NominatedList({ list, onRemove, className }: NominatedListProps) {
     return (
-        <ul className={styles.list}>
+        <ul className={`${styles.list} ${className}`}>
             {list.map(e => (
                 <li key={e.imdbID}>
                     <NominatedItem movie={e} onRemove={onRemove}/>

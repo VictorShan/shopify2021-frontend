@@ -6,3 +6,13 @@
     display: flex;
     flex-flow: row nowrap;
 }
+
+.left {
+    flex-grow: 3;
+    min-width: 200px;
+}
+
+.right {
+    flex-grow: 1;
+    min-width: 200px;
+}

@@ -6,10 +6,11 @@ import styles from './SearchResults.module.css'
 export type searchResultProps = {
     searchTerm: string,
     nominated: MovieData[],
-    onNominate: (movie: MovieData) => void
+    onNominate: (movie: MovieData) => void,
+    className?: string
 }
 
-export default function SearchResults({ searchTerm, nominated, onNominate }: searchResultProps) {
+export default function SearchResults({ searchTerm, nominated, onNominate, className }: searchResultProps) {
     let [results, setResults] = useState<MovieData[]>([])
     useEffect(() => {
         fetch(process.env.REACT_APP_OMDB_API_SEARCH + searchTerm.replaceAll(' ', '+'))
@@ -19,7 +20,7 @@ export default function SearchResults({ searchTerm, nominated, onNominate }: sea
     }, [searchTerm])
 
     return (
-        <div className={styles.resultsContainer}>
+        <div className={`${styles.resultsContainer} ${className}`}>
             {console.log(results)}
             <ul className={styles.list}>
                 {results && results.map(e => {
