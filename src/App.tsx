@@ -3,17 +3,24 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import SearchBar from './components/SearchBar/SearchBar';
 import SearchResults from './components/SearchResults/SearchResults';
 import { useState } from 'react';
+import { MovieData } from './components/types';
+import NominatedList from './components/NominatedList/NominatedList';
 
 function App() {
   let [searchTerm, setSearchTerm] = useState("")
+  let [nominated, setNominated] = useState<MovieData[]>([])
   return (
     <div className={styles.app}>
       <div>
         <h1>The Shoppies</h1>
         <SearchBar onChange={setSearchTerm}/>
       </div>
-      <div>
-        <SearchResults searchTerm={searchTerm} />
+      <div className={styles.container}>
+        <SearchResults 
+          searchTerm={searchTerm}
+          nominated={nominated}
+          onNominate={newMovie => setNominated(old => [...old, newMovie])}/>
+        <NominatedList list={nominated} onRemove={movie => setNominated(old => old.filter(e => e.imdbID !== movie.imdbID))}/>
       </div>
     </div>
   );

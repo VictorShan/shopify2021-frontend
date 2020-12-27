@@ -1,22 +1,16 @@
 import { useEffect, useState } from "react"
 import SearchResult from "./SearchResult/SearchResult"
+import { MovieData } from "../types"
 import styles from './SearchResults.module.css'
 
 export type searchResultProps = {
-    searchTerm: string
+    searchTerm: string,
+    nominated: MovieData[],
+    onNominate: (movie: MovieData) => void
 }
 
-export type MovieData = {
-    Title: string,
-    Poster: string,
-    Type: string,
-    imdbID: string,
-    Year: number
-}
-
-export default function SearchResults({ searchTerm }: searchResultProps) {
+export default function SearchResults({ searchTerm, nominated, onNominate }: searchResultProps) {
     let [results, setResults] = useState<MovieData[]>([])
-    let [nominated, setNominated] = useState<MovieData[]>([])
     useEffect(() => {
         fetch(process.env.REACT_APP_OMDB_API_SEARCH + searchTerm.replaceAll(' ', '+'))
             .then(res => res.json())
@@ -24,14 +18,6 @@ export default function SearchResults({ searchTerm }: searchResultProps) {
             .catch(console.error)
     }, [searchTerm])
 
-    const handleNominated = (movieData: MovieData, nominated: MovieData[]) => {
-        if (nominated.filter(movie => movie.imdbID === movieData.imdbID).length === 1) {
-            console.log(movieData.Title)
-            return () => {}
-        } else {
-            return () => setNominated(old => [...old, movieData])
-        }
-    }
     return (
         <div className={styles.resultsContainer}>
             {console.log(results)}
@@ -48,7 +34,7 @@ export default function SearchResults({ searchTerm }: searchResultProps) {
                         searchRes = (
                             <SearchResult
                                 movieData={e}
-                                onNominate={() => setNominated(old => [...old, e])} />
+                                onNominate={() => onNominate(e)} />
                         )
                     }
                     return <li key={e?.Title}>{searchRes}</li>

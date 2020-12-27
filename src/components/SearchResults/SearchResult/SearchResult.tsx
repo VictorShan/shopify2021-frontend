@@ -1,4 +1,4 @@
-import { MovieData } from '../SearchResults'
+import { MovieData } from '../../types'
 import styles from './SearchResult.module.css'
 import Button from 'react-bootstrap/Button'
 export type SearchResultProps = {
