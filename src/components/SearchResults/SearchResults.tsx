@@ -26,7 +26,7 @@ export default function SearchResults({ searchTerm }: searchResultProps) {
     return (
         <div className={styles.resultsContainer}>
             {console.log(results)}
-            <ul>
+            <ul className={styles.list}>
                 {results && results.map(e => (
                     <li key={e?.Title}>
                         <SearchResult movieData={e} />
