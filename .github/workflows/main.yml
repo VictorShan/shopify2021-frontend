@@ -18,7 +18,6 @@ jobs:
         run: npm run build
         env:
           REACT_APP_OMDB_API_SEARCH: ${{ secrets.REACT_APP_OMDB_API_SEARCH }}
-          # CI: ""
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
         env:
