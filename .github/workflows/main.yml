@@ -15,6 +15,11 @@ jobs:
           persist-credentials: false
       - name: NPM Clean Install 🔧
         run: npm ci
+      - name: Get API Key
+        env:
+          REACT_APP_OMDB_API_SEARCH: ${{ secrets.REACT_APP_OMDB_API_SEARCH }}
+        run: |
+          echo "$REACT_APP_OMDB_API_SEARCH"
       - name: NPM Build 🔧
         env:
           REACT_APP_OMDB_API_SEARCH: ${{ secrets.REACT_APP_OMDB_API_SEARCH }}
