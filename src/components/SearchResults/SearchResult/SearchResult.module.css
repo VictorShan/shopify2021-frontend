@@ -3,7 +3,7 @@
     flex-flow: row nowrap;
     justify-content: flex-start;
     max-height: 300px;
-    border: 5px solid rgb(173, 173, 173);
+    border: 2px solid rgb(173, 173, 173);
     margin: 10px;
 }
 
@@ -11,6 +11,13 @@
     width: auto;
     max-width: 150px;
     margin: 20px;
+}
+
+.svg {
+    width: auto;
+    max-width: 150px;
+    margin: 20px;
+    font-size: 10rem;
 }
 
 .text {
@@ -24,7 +31,7 @@
 .btn {
     /* margin-top: auto; */
     /* align-self: flex-end; */
-    width: 10rem;
+    width: 7rem;
     margin-right: 10px;
     margin-bottom: 30px;
 }

@@ -16,7 +16,7 @@ function App() {
       nominated.length >= 5 ?
         <div className={styles.alert}>
           <Alert variant={'success'}>
-            You have 5 nominations!
+            You have at least 5 nominations!
           </Alert>
         </div>
           : <></>

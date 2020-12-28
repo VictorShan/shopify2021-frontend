@@ -1,6 +1,7 @@
 .resultsContainer {
     margin: 10px 10px;
-    width: 100%;
+    width: auto;
+    /* width: 100%; */
 }
 
 .list {

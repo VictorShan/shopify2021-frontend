@@ -20,6 +20,7 @@ export default function SearchResults({ searchTerm, nominated, onNominate, class
     }, [searchTerm])
 
     return (
+        
         <div className={`${styles.resultsContainer} ${className}`}>
             <h5>Search Results:</h5>
             <ul className={styles.list}>
@@ -38,7 +39,11 @@ export default function SearchResults({ searchTerm, nominated, onNominate, class
                                 onNominate={() => onNominate(e)} />
                         )
                     }
-                    return <li key={e?.Title}>{searchRes}</li>
+                    return (
+                        <li key={e?.Title}>
+                            {searchRes}
+                        </li>
+                    )
                 })
                 }
             </ul>
