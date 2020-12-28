@@ -30,7 +30,7 @@ export default function SearchBar({ onChange }: SearchBarPropsType) {
                 </InputGroup.Prepend>
                 
                 <FormControl
-                    placeholder="Enter a movie name here and press enter"
+                    placeholder="Enter a movie name and press enter"
                     aria-label="Movie Name"
                     aria-describedby="search movie box"
                     onChange={e => setTerms(e.target.value)}
