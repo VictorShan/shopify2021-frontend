@@ -1,25 +1,15 @@
 {
   "files": {
-    "main.css": "/shopify2021-frontend/static/css/main.98656bf9.chunk.css",
-    "main.js": "/shopify2021-frontend/static/js/main.adfa4e4c.chunk.js",
-    "main.js.map": "/shopify2021-frontend/static/js/main.adfa4e4c.chunk.js.map",
-    "runtime-main.js": "/shopify2021-frontend/static/js/runtime-main.2955f429.js",
-    "runtime-main.js.map": "/shopify2021-frontend/static/js/runtime-main.2955f429.js.map",
-    "static/css/2.20aa2d7b.chunk.css": "/shopify2021-frontend/static/css/2.20aa2d7b.chunk.css",
-    "static/js/2.79f90b47.chunk.js": "/shopify2021-frontend/static/js/2.79f90b47.chunk.js",
-    "static/js/2.79f90b47.chunk.js.map": "/shopify2021-frontend/static/js/2.79f90b47.chunk.js.map",
-    "static/js/3.e5dc86e5.chunk.js": "/shopify2021-frontend/static/js/3.e5dc86e5.chunk.js",
-    "static/js/3.e5dc86e5.chunk.js.map": "/shopify2021-frontend/static/js/3.e5dc86e5.chunk.js.map",
+    "main.css": "/shopify2021-frontend/static/css/main.09d8a61c.css",
+    "main.js": "/shopify2021-frontend/static/js/main.6cf3fed0.js",
+    "static/js/377.9dbc3d46.chunk.js": "/shopify2021-frontend/static/js/377.9dbc3d46.chunk.js",
     "index.html": "/shopify2021-frontend/index.html",
-    "static/css/2.20aa2d7b.chunk.css.map": "/shopify2021-frontend/static/css/2.20aa2d7b.chunk.css.map",
-    "static/css/main.98656bf9.chunk.css.map": "/shopify2021-frontend/static/css/main.98656bf9.chunk.css.map",
-    "static/js/2.79f90b47.chunk.js.LICENSE.txt": "/shopify2021-frontend/static/js/2.79f90b47.chunk.js.LICENSE.txt"
+    "main.09d8a61c.css.map": "/shopify2021-frontend/static/css/main.09d8a61c.css.map",
+    "main.6cf3fed0.js.map": "/shopify2021-frontend/static/js/main.6cf3fed0.js.map",
+    "377.9dbc3d46.chunk.js.map": "/shopify2021-frontend/static/js/377.9dbc3d46.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.2955f429.js",
-    "static/css/2.20aa2d7b.chunk.css",
-    "static/js/2.79f90b47.chunk.js",
-    "static/css/main.98656bf9.chunk.css",
-    "static/js/main.adfa4e4c.chunk.js"
+    "static/css/main.09d8a61c.css",
+    "static/js/main.6cf3fed0.js"
   ]
 }
